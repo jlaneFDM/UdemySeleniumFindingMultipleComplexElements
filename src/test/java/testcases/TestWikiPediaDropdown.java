@@ -43,7 +43,7 @@ public class TestWikiPediaDropdown {
 		System.out.println("Number of links on page: " + links.size());
 		
 		for (WebElement webElement : links) {
-			System.out.println("Link text: " + webElement.getText() + "\n URL: " + webElement.getDomAttribute("href"));
+			System.out.println("Link text: " + webElement.getText() + "\n URL: " + webElement.getAttribute("href"));
 		}
 		
 		
