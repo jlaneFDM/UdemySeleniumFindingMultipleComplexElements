@@ -47,6 +47,14 @@ public class TestWikiPediaDropdown {
 		}
 		
 		
+		//find elements within a block: counting links inside wikipedia homepage footer
+		
+		WebElement footer = driver.findElement(By.xpath("/html/body/div[11]"));
+		
+		List<WebElement> anchorTags = footer.findElements(By.tagName("a"));
+		
+		System.out.println("Total links in footer: " + anchorTags.size());
+		
 		
 		
 
